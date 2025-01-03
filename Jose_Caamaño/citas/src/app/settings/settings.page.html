@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button routerLink="/"> 
+        <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Configuraciones</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Permitir eliminar citas en el inicio</ion-label>
+    <ion-toggle [(ngModel)]="allowDeleteOnStartup" (ionChange)="toggleDeleteOption()"></ion-toggle>
+  </ion-item>
+</ion-content>

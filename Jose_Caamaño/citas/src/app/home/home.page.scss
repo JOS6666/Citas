@@ -1,0 +1,41 @@
+ion-buttons {
+  background: #445e7a; 
+  color: rgb(14, 6, 229); 
+  size: 60px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.quote-container {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.quote-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: blue;
+}
+
+.quote-author {
+  font-size: 1rem;
+  font-style: italic;
+  margin-top: 10px;
+  color: rgb(94, 89, 89);
+}
+
+
+
+ion-fab-button {
+  --background: #007bff; 
+  --color: rgb(12, 12, 12); 
+  --size: 60px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+ion-icon {
+  font-size: 24px; 
+}

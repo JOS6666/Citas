@@ -1,0 +1,19 @@
+:root {
+    --ion-background-color: #f8f9fa; /* Fondo claro */
+    --ion-text-color: #333; /* Texto oscuro */
+  }
+  
+  ion-toolbar {
+    --background: #ffffff; /* Fondo blanco */
+    --ion-color-primary: #007bff; /* Azul principal */
+  }
+  
+  ion-content {
+    --background: #f8f9fa; /* Fondo claro */
+  }
+  
+  
+  ion-icon {
+      font-size: 24px; /* Tamaño predeterminado para todos los íconos */
+    }
+    

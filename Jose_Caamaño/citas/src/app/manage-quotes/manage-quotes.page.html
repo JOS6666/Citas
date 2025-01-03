@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button routerLink="/"> 
+        <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Gestión de citas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Crea una nueva cita</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-input placeholder="Cita" [(ngModel)]="newQuote.text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input placeholder="Autor" [(ngModel)]="newQuote.author"></ion-input>
+      </ion-item>
+      <ion-button expand="block" color="primary" (click)="addQuote()">
+        Agregar
+        <ion-icon slot="end" name="add-outline"></ion-icon>
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-list>
+    <ion-item *ngFor="let quote of quotes">
+      <ion-label>
+        "{{ quote.text }}" - {{ quote.author }}
+      </ion-label>
+      <ion-button fill="clear" color="danger" (click)="deleteQuote(quote)">
+        <ion-icon slot="icon-only" name="trash"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-list>  
+</ion-content>
